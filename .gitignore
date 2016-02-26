@@ -1,0 +1,9 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/app/src/main/java/nanya/s/musicme/infrastructure/youtube/YoutubeConnector.java
+/captures

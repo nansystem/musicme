@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MusicMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_youtuber_list">YoutuberListActivity</string>
+    <string name="title_activity_movie_list">MovieListActivity</string>
+    <string name="title_activity_movie">MovieActivity</string>
+    <string name="failed">動画の読み込みに失敗しました。</string>
+</resources>

@@ -42,6 +42,10 @@ public class SearchResults implements Iterable<VideoItem>, Serializable{
         return videos;
     }
 
+    public void addAll(ArrayList<VideoItem> list){
+        this.list.addAll(list);
+    }
+
     public String channelId() {
         return channelId;
     }

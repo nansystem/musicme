@@ -81,6 +81,7 @@ public class MovieListActivity extends AppCompatActivity {
             public void run() {
                 YoutubeConnector yc = new YoutubeConnector(MovieListActivity.this);
                 final SearchResults searchResults = yc.search(channelId, pageToken);
+                MovieListActivity.this.searchResults.addAll(searchResults.list());
                 MovieListActivity.this.pageToken = searchResults.pageToken();
                 handler.post(new Runnable() {
                     public void run() {

@@ -34,10 +34,6 @@ public class MovieActivity extends YouTubeBaseActivity implements YouTubePlayer.
         public void onNext() {}
         @Override
         public void onPlaylistEnded() {
-            Log.d("onPlaylistEnded", "onPlaylistEnded: ");
-//                    searchOnYoutube(searchResults.channelId(), searchResults.pageToken());
-            List<String> songs = Arrays.asList("dhQeNAv_RoA", "uYRez0ETDzg", "fLBMBq2y-2c");
-            MovieActivity.youTubePlayer.cueVideos(songs);
         }
     }
 
@@ -57,7 +53,7 @@ public class MovieActivity extends YouTubeBaseActivity implements YouTubePlayer.
             int position = getIntent().getIntExtra(VIDEO_POSITION, 0);
             youTubePlayer.loadVideos(searchResults.listVideos(), position, 0);
             youTubePlayer.setPlaylistEventListener(new MyPlaylistEventListener());
-            this.youTubePlayer = youTubePlayer;
+            MovieActivity.youTubePlayer = youTubePlayer;
         }
     }
 

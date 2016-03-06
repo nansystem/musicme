@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import nanya.s.musicme.R;
 import nanya.s.musicme.infrastructure.android.EndlessRecyclerViewScrollListener;
 import nanya.s.musicme.model.singer.Youtuber;
-import nanya.s.musicme.model.singer.YoutuberAdapter;
 import nanya.s.musicme.model.singer.YoutuberRecyclerAdapter;
 import nanya.s.musicme.model.singer.Youtubers;
 

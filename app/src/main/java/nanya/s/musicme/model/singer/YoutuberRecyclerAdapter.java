@@ -57,6 +57,8 @@ public class YoutuberRecyclerAdapter extends RecyclerView.Adapter<YoutuberRecycl
         ImageView imageView = (ImageView) cardView.findViewById(R.id.thumbnail);
         textView.setText(youtuber.title());
         Picasso.with(context).load(youtuber.thumbnail()).into(imageView);
+        TextView viewCount = (TextView) cardView.findViewById(R.id.viewCount);
+        viewCount.setText(youtuber.viewCountAsText());
         cardView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

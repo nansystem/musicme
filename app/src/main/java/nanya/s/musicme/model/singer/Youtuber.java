@@ -30,6 +30,9 @@ public class Youtuber implements Serializable{
     }
 
     public String viewCountAsText(){
-        return String.format("総再生回数:%d回",viewCount);
+        if(viewCount > 10000){
+            return String.format("総再生回数 %d万回",viewCount / 10000);
+        }
+        return String.format("総再生回数 %d回", viewCount);
     }
 }

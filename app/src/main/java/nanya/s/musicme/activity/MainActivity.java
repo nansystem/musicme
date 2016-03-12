@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("歌手一覧");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("歌手一覧");
 
         ArrayList<Youtuber> youtubers = Youtubers.fetchList(0);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.movieList);

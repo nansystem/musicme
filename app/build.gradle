@@ -24,10 +24,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:design:23.2.0'
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.android.support:cardview-v7:23.2.0'
     compile 'com.squareup.picasso:picasso:2.3.3'
     compile 'com.google.apis:google-api-services-youtube:v3-rev161-1.21.0'
     compile files('libs/YouTubeAndroidPlayerApi.jar')
-    compile 'com.android.support:recyclerview-v7:23.2.0'
-    compile 'com.android.support:cardview-v7:23.2.0'
-    compile 'com.android.support:design:23.2.0'
 }
